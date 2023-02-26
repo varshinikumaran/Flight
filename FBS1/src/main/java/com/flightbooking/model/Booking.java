@@ -55,5 +55,9 @@ public class Booking {
 	@JsonIgnoreProperties({"userId", "password","dob"})
 	private User user;
 	
+	@OneToMany(mappedBy="bookings")
+	private List<Ticket> tickets;
+
+	
 
 }
