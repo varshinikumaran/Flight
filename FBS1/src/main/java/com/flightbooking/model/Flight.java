@@ -59,6 +59,7 @@ public class Flight {
 	
    @OneToMany(mappedBy="flight")
    private List<Booking> bookings;
+	
    
    
 }
