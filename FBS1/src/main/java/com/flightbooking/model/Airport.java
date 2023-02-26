@@ -35,4 +35,7 @@ public class Airport {
 	@Column(name="code")
 	private String code;
 	
+	@OneToMany(mappedBy="destinationAirport")
+	private List<Flight> flights;
+	
 }
