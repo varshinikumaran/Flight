@@ -55,6 +55,9 @@ public class Flight {
    @ManyToOne
    @JoinColumn(name="airport_id")
    private Airport destinationAirport;
+	
+   @OneToMany(mappedBy="flight")
+   private List<Booking> bookings;
    
    
 }
